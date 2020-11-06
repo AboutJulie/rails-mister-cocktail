@@ -16,9 +16,9 @@
   <body>
     <nav class="navbar navbar-light bg-light">
       <div class="container">
-        <%= link_to 'Mr Cocktail! 🍹', root_path, class: 'navbar-brand' %>
+        <%= link_to 'Cocktail Collection 🍹', root_path, class: 'navbar-brand' %>
         <%= link_to new_cocktail_path, class: 'btn btn-sm btn-outline-primary' do %>
-          <i class="fa fa-plus"></i> Add new cocktail
+          <i class="fa fa-plus"></i> Create new cocktail
         <% end %>
       </div>
     </nav>
@@ -27,7 +27,7 @@
       <%= yield %>
 
       <footer class="mt-5">
-        &copy; <%= Date.today.year %> Ricardo Otero All Rights Reserved
+        &copy; <%= Date.today.year %> Julia Kauffmann All Rights Reserved
       </footer>
     </div>
   </body>

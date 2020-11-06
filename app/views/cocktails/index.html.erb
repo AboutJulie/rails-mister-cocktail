@@ -1,5 +1,5 @@
 <% if @cocktails.any? %>
-  <h3>List of cocktails</h3>
+  <h3>Your Cocktail Collection</h3>
 
   <ul>
     <% @cocktails.each do |cocktail| %>
@@ -9,7 +9,7 @@
     <% end %>
   </ul>
 <% else %>
-  <h3>Bummer 😿</h3>
+  <h3>We are sorry 😿</h3>
   <p class="empty-state">
     You don't have any cocktails yet. Get the party started by
     <strong><%= link_to 'adding your first one now', new_cocktail_path %></strong>!
